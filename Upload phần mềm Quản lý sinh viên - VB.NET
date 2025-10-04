@@ -1,0 +1,860 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="Current" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Compile Update="frmqlsv.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="frmsinhvien.vb">
+      <SubType>Form</SubType>
+    </Compile>
+  </ItemGroup>
+</Project>
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+</root>
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!--
+    Microsoft ResX Schema
+
+    Version 2.0
+
+    The primary goals of this format is to allow a simple XML format
+    that is mostly human readable. The generation and parsing of the
+    various data types are done through the TypeConverter classes
+    associated with the data types.
+
+    Example:
+
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+
+    There are any number of "resheader" rows that contain simple
+    name/value pairs.
+
+    Each data row contains a name, and value. The row also contains a
+    type or mimetype. Type corresponds to a .NET class that support
+    text/value conversion through the TypeConverter architecture.
+    Classes that don't support this are serialized and stored with the
+    mimetype set.
+
+    The mimetype is used for serialized objects, and tells the
+    ResXResourceReader how to depersist the object. This is currently not
+    extensible. For a given mimetype the value must be set accordingly:
+
+    Note - application/x-microsoft.net.object.binary.base64 is the format
+    that the ResXResourceWriter will generate, however the reader can
+    read any of the formats listed below.
+
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <metadata name="BackgroundWorker1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
+</root>
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36414.22 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Quanlisinhvien", "Quanlisinhvien.vbproj", "{125304FC-5254-439D-A038-C0A404DD2FF1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{125304FC-5254-439D-A038-C0A404DD2FF1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{125304FC-5254-439D-A038-C0A404DD2FF1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{125304FC-5254-439D-A038-C0A404DD2FF1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{125304FC-5254-439D-A038-C0A404DD2FF1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {5C38D799-DCC2-4821-9B2C-67119CEB2F69}
+	EndGlobalSection
+EndGlobal
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+Partial Class frmsinhvien
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()> _
+    Protected Overrides Sub Dispose(ByVal disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()> _
+    Private Sub InitializeComponent()
+        Label1 = New Label()
+        Label2 = New Label()
+        Label3 = New Label()
+        Label4 = New Label()
+        txtmasv = New TextBox()
+        txtidlop = New TextBox()
+        txtdiachi = New TextBox()
+        txtten = New TextBox()
+        btok = New Button()
+        btcancel = New Button()
+        SuspendLayout()
+        ' 
+        ' Label1
+        ' 
+        Label1.AutoSize = True
+        Label1.Location = New Point(48, 266)
+        Label1.Name = "Label1"
+        Label1.Size = New Size(54, 20)
+        Label1.TabIndex = 1
+        Label1.Text = "Mã SV:"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(48, 128)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(35, 20)
+        Label2.TabIndex = 2
+        Label2.Text = "Tên:"
+        ' 
+        ' Label3
+        ' 
+        Label3.AutoSize = True
+        Label3.Location = New Point(48, 194)
+        Label3.Name = "Label3"
+        Label3.Size = New Size(58, 20)
+        Label3.TabIndex = 3
+        Label3.Text = "Địa chỉ:"
+        ' 
+        ' Label4
+        ' 
+        Label4.AutoSize = True
+        Label4.Location = New Point(48, 71)
+        Label4.Name = "Label4"
+        Label4.Size = New Size(53, 20)
+        Label4.TabIndex = 4
+        Label4.Text = "ID lớp:"
+        ' 
+        ' txtmasv
+        ' 
+        txtmasv.Location = New Point(164, 266)
+        txtmasv.Name = "txtmasv"
+        txtmasv.Size = New Size(302, 27)
+        txtmasv.TabIndex = 6
+        ' 
+        ' txtidlop
+        ' 
+        txtidlop.Location = New Point(164, 64)
+        txtidlop.Name = "txtidlop"
+        txtidlop.ReadOnly = True
+        txtidlop.Size = New Size(302, 27)
+        txtidlop.TabIndex = 8
+        ' 
+        ' txtdiachi
+        ' 
+        txtdiachi.Location = New Point(164, 194)
+        txtdiachi.Name = "txtdiachi"
+        txtdiachi.Size = New Size(302, 27)
+        txtdiachi.TabIndex = 9
+        ' 
+        ' txtten
+        ' 
+        txtten.Location = New Point(164, 128)
+        txtten.Name = "txtten"
+        txtten.Size = New Size(302, 27)
+        txtten.TabIndex = 10
+        ' 
+        ' btok
+        ' 
+        btok.Location = New Point(164, 350)
+        btok.Name = "btok"
+        btok.Size = New Size(107, 51)
+        btok.TabIndex = 11
+        btok.Text = "&Ok"
+        btok.UseVisualStyleBackColor = True
+        ' 
+        ' btcancel
+        ' 
+        btcancel.Location = New Point(338, 350)
+        btcancel.Name = "btcancel"
+        btcancel.Size = New Size(128, 51)
+        btcancel.TabIndex = 12
+        btcancel.Text = "&Cancel"
+        btcancel.UseVisualStyleBackColor = True
+        ' 
+        ' frmsinhvien
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(561, 420)
+        Controls.Add(btcancel)
+        Controls.Add(btok)
+        Controls.Add(txtten)
+        Controls.Add(txtdiachi)
+        Controls.Add(txtidlop)
+        Controls.Add(txtmasv)
+        Controls.Add(Label4)
+        Controls.Add(Label3)
+        Controls.Add(Label2)
+        Controls.Add(Label1)
+        Name = "frmsinhvien"
+        Text = "frmsinhvien"
+        ResumeLayout(False)
+        PerformLayout()
+    End Sub
+
+    Friend WithEvents Label1 As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents Label3 As Label
+    Friend WithEvents Label4 As Label
+    Friend WithEvents txtmasv As TextBox
+    Friend WithEvents txtidlop As TextBox
+    Friend WithEvents txtdiachi As TextBox
+    Friend WithEvents txtten As TextBox
+    Friend WithEvents btok As Button
+    Friend WithEvents btcancel As Button
+End Class
+
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class frmsinhvien
+    Public isEdit As Boolean = False
+    Private DBA As New DataBaseAccess
+
+    Private Function IsEmpty() As Boolean
+        Return String.IsNullOrEmpty(txtmasv.Text) OrElse
+               String.IsNullOrEmpty(txtten.Text) OrElse
+               String.IsNullOrEmpty(txtdiachi.Text) OrElse
+               String.IsNullOrEmpty(txtidlop.Text)
+    End Function
+
+    Private Function InsertSV() As Boolean
+        Dim sqlQuery As String = "INSERT INTO [dbo].[sinhvien] ([MaSV], [TenSv], [Diachi], [idlop]) " &
+                                 String.Format("VALUES ('{0}', N'{1}', N'{2}', '{3}')", txtmasv.Text, txtten.Text, txtdiachi.Text, txtidlop.Text)
+        Return DBA.ExecuteNonQuery(sqlQuery)
+    End Function
+
+    Private Function UpdateSV() As Boolean
+        Dim sqlQuery As String = "UPDATE [dbo].[sinhvien] SET " &
+                                 String.Format("[TenSv] = N'{0}', [Diachi] = N'{1}', [idlop] = '{2}' WHERE [MaSV] = '{3}'",
+                                               txtten.Text, txtdiachi.Text, txtidlop.Text, txtmasv.Text)
+        Return DBA.ExecuteNonQuery(sqlQuery)
+    End Function
+
+    Private Sub btok_Click(sender As Object, e As EventArgs) Handles btok.Click
+        If IsEmpty() Then
+            MessageBox.Show("Vui lòng nhập đầy đủ thông tin!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim result As Boolean
+        If isEdit Then
+            result = UpdateSV()
+        Else
+            result = InsertSV()
+        End If
+
+        If result Then
+            MessageBox.Show("Lưu dữ liệu thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+            Me.DialogResult = DialogResult.OK
+        Else
+            MessageBox.Show("Lưu thất bại!", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Me.DialogResult = DialogResult.No
+        End If
+
+        Me.Close()
+    End Sub
+
+    Private Sub btcancel_Click(sender As Object, e As EventArgs) Handles btcancel.Click
+        Me.Close()
+    End Sub
+End Class
+
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class DataBaseAccess
+    Private connectionString As String = "Data Source=.;Initial Catalog=qlsv;Integrated Security=True"
+
+    '=== Lấy dữ liệu dạng DataTable ===
+    Public Function GetDataTable(sqlQuery As String) As DataTable
+        Dim dt As New DataTable()
+        Using con As New SqlConnection(connectionString)
+            Using da As New SqlDataAdapter(sqlQuery, con)
+                con.Open()
+                da.Fill(dt)
+            End Using
+        End Using
+        Return dt
+    End Function
+
+    '=== Thực thi câu lệnh không trả dữ liệu (INSERT, UPDATE, DELETE) ===
+    Public Function ExecuteNonQuery(sqlQuery As String) As Boolean
+        Try
+            Using con As New SqlConnection(connectionString)
+                Using cmd As New SqlCommand(sqlQuery, con)
+                    con.Open()
+                    cmd.ExecuteNonQuery()
+                End Using
+            End Using
+            Return True
+        Catch ex As Exception
+            MessageBox.Show("Lỗi khi thực thi SQL: " & ex.Message, "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error)
+            Return False
+        End Try
+    End Function
+End Class
+
+<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
+Partial Class frmqlsv
+    Inherits System.Windows.Forms.Form
+
+    'Form overrides dispose to clean up the component list.
+    <System.Diagnostics.DebuggerNonUserCode()>
+    Protected Overrides Sub Dispose(disposing As Boolean)
+        Try
+            If disposing AndAlso components IsNot Nothing Then
+                components.Dispose()
+            End If
+        Finally
+            MyBase.Dispose(disposing)
+        End Try
+    End Sub
+
+    'Required by the Windows Form Designer
+    Private components As System.ComponentModel.IContainer
+
+    'NOTE: The following procedure is required by the Windows Form Designer
+    'It can be modified using the Windows Form Designer.  
+    'Do not modify it using the code editor.
+    <System.Diagnostics.DebuggerStepThrough()>
+    Private Sub InitializeComponent()
+        lbtk = New Label()
+        Label2 = New Label()
+        dgvsinhvien = New DataGridView()
+        btthem = New Button()
+        btsua = New Button()
+        btxoa = New Button()
+        BackgroundWorker1 = New ComponentModel.BackgroundWorker()
+        GroupBox1 = New GroupBox()
+        cbclass = New ComboBox()
+        txttk = New TextBox()
+        cbtk = New ComboBox()
+        CType(dgvsinhvien, ComponentModel.ISupportInitialize).BeginInit()
+        GroupBox1.SuspendLayout()
+        SuspendLayout()
+        ' 
+        ' lbtk
+        ' 
+        lbtk.AutoSize = True
+        lbtk.Location = New Point(37, 55)
+        lbtk.Name = "lbtk"
+        lbtk.Size = New Size(70, 20)
+        lbtk.TabIndex = 0
+        lbtk.Text = "Tìm kiếm"
+        ' 
+        ' Label2
+        ' 
+        Label2.AutoSize = True
+        Label2.Location = New Point(24, 55)
+        Label2.Name = "Label2"
+        Label2.Size = New Size(59, 28)
+        Label2.TabIndex = 1
+        Label2.Text = "Class:"
+        ' 
+        ' dgvsinhvien
+        ' 
+        dgvsinhvien.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        dgvsinhvien.Location = New Point(25, 96)
+        dgvsinhvien.Name = "dgvsinhvien"
+        dgvsinhvien.RowHeadersWidth = 51
+        dgvsinhvien.Size = New Size(879, 500)
+        dgvsinhvien.TabIndex = 2
+        ' 
+        ' btthem
+        ' 
+        btthem.Location = New Point(935, 130)
+        btthem.Name = "btthem"
+        btthem.Size = New Size(239, 29)
+        btthem.TabIndex = 4
+        btthem.Text = "Thêm"
+        btthem.UseVisualStyleBackColor = True
+        ' 
+        ' btsua
+        ' 
+        btsua.Location = New Point(935, 187)
+        btsua.Name = "btsua"
+        btsua.Size = New Size(239, 29)
+        btsua.TabIndex = 5
+        btsua.Text = "Sửa"
+        btsua.UseVisualStyleBackColor = True
+        ' 
+        ' btxoa
+        ' 
+        btxoa.Location = New Point(935, 242)
+        btxoa.Name = "btxoa"
+        btxoa.Size = New Size(239, 29)
+        btxoa.TabIndex = 6
+        btxoa.Text = "Xóa"
+        btxoa.UseVisualStyleBackColor = True
+        ' 
+        ' GroupBox1
+        ' 
+        GroupBox1.Controls.Add(cbclass)
+        GroupBox1.Controls.Add(Label2)
+        GroupBox1.Font = New Font("Segoe UI", 12F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        GroupBox1.ForeColor = Color.Blue
+        GroupBox1.Location = New Point(943, 330)
+        GroupBox1.Name = "GroupBox1"
+        GroupBox1.Size = New Size(239, 213)
+        GroupBox1.TabIndex = 7
+        GroupBox1.TabStop = False
+        GroupBox1.Text = "Filter"
+        ' 
+        ' cbclass
+        ' 
+        cbclass.FormattingEnabled = True
+        cbclass.Location = New Point(24, 117)
+        cbclass.Name = "cbclass"
+        cbclass.Size = New Size(207, 36)
+        cbclass.TabIndex = 8
+        ' 
+        ' txttk
+        ' 
+        txttk.Location = New Point(382, 56)
+        txttk.Name = "txttk"
+        txttk.Size = New Size(522, 27)
+        txttk.TabIndex = 8
+        ' 
+        ' cbtk
+        ' 
+        cbtk.FormattingEnabled = True
+        cbtk.Items.AddRange(New Object() {"MaSV", "TenSV"})
+        cbtk.Location = New Point(128, 55)
+        cbtk.Name = "cbtk"
+        cbtk.Size = New Size(209, 28)
+        cbtk.TabIndex = 9
+        ' 
+        ' frmqlsv
+        ' 
+        AutoScaleDimensions = New SizeF(8F, 20F)
+        AutoScaleMode = AutoScaleMode.Font
+        ClientSize = New Size(1203, 618)
+        Controls.Add(cbtk)
+        Controls.Add(txttk)
+        Controls.Add(GroupBox1)
+        Controls.Add(btxoa)
+        Controls.Add(btsua)
+        Controls.Add(btthem)
+        Controls.Add(dgvsinhvien)
+        Controls.Add(lbtk)
+        Name = "frmqlsv"
+        Text = "QUẢN LÍ SINH VIÊN"
+        CType(dgvsinhvien, ComponentModel.ISupportInitialize).EndInit()
+        GroupBox1.ResumeLayout(False)
+        GroupBox1.PerformLayout()
+        ResumeLayout(False)
+        PerformLayout()
+    End Sub
+
+    Friend WithEvents lbtk As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents dgvsinhvien As DataGridView
+    Friend WithEvents btthem As Button
+    Friend WithEvents btsua As Button
+    Friend WithEvents btxoa As Button
+    Friend WithEvents BackgroundWorker1 As System.ComponentModel.BackgroundWorker
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents cbclass As ComboBox
+    Friend WithEvents txttk As TextBox
+    Friend WithEvents cbtk As ComboBox
+
+End Class
+
+Imports System.Data
+Imports System.Data.SqlClient
+
+Public Class frmqlsv
+    Private DBA As New DataBaseAccess()
+    Private isload As Boolean = False
+
+    '=== Load danh sách lớp ===
+    Private Sub LoadData()
+        Dim sqlQuery As String = "SELECT [idlop], [tenlop] FROM [dbo].[lop]"
+        Dim dtable As DataTable = DBA.GetDataTable(sqlQuery)
+        Me.cbclass.DataSource = dtable
+        Me.cbclass.ValueMember = "idlop"
+        Me.cbclass.DisplayMember = "tenlop"
+    End Sub
+
+    '=== Load danh sách sinh viên theo lớp ===
+    Private Sub LoadDataGr(idlop As String)
+        Dim sqlQuery As String = $"SELECT [MaSV], [TenSv], [Diachi], [idlop] FROM [dbo].[sinhvien] WHERE [idlop] = '{idlop}'"
+        Dim dtable As DataTable = DBA.GetDataTable(sqlQuery)
+        Me.dgvsinhvien.DataSource = dtable
+        With Me.dgvsinhvien
+            .Columns(0).HeaderText = "Mã SV"
+            .Columns(1).HeaderText = "Tên SV"
+            .Columns(2).HeaderText = "Địa chỉ"
+            .Columns(3).HeaderText = "Mã lớp"
+        End With
+    End Sub
+
+    '=== Form load ===
+    Private Sub frmqlsv_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        cbtk.SelectedIndex = 0
+        isload = False
+        LoadData()
+        isload = True
+
+        If cbclass.SelectedValue IsNot Nothing AndAlso Not TypeOf cbclass.SelectedValue Is DataRowView Then
+            LoadDataGr(cbclass.SelectedValue.ToString())
+        End If
+    End Sub
+
+    '=== Khi chọn lớp ===
+    Private Sub cbclass_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbclass.SelectedIndexChanged
+        If Not isload Then Exit Sub
+        If cbclass.SelectedValue Is Nothing OrElse TypeOf cbclass.SelectedValue Is DataRowView Then Exit Sub
+        LoadDataGr(cbclass.SelectedValue.ToString())
+    End Sub
+
+    '=== Tìm kiếm sinh viên ===
+    Private Sub tksinhvien(idlop As String, value As String)
+        If String.IsNullOrWhiteSpace(value) Then
+            LoadDataGr(idlop)
+            Exit Sub
+        End If
+
+        Dim sqlQuery As String = $"SELECT [MaSV], [TenSv], [Diachi], [idlop] FROM [dbo].[sinhvien] WHERE [idlop] = '{idlop}'"
+        If Me.cbtk.SelectedIndex = 0 Then
+            sqlQuery += String.Format(" AND MaSV LIKE '{0}%'", value)
+        ElseIf Me.cbtk.SelectedIndex = 1 Then
+            sqlQuery += String.Format(" AND TenSV LIKE N'{0}%'", value)
+        End If
+
+        Dim dtable As DataTable = DBA.GetDataTable(sqlQuery)
+        Me.dgvsinhvien.DataSource = dtable
+    End Sub
+
+    '=== Khi thay đổi combobox tìm kiếm ===
+    Private Sub cbtk_SelectedIndexChanged(sender As Object, e As EventArgs) Handles cbtk.SelectedIndexChanged
+        If cbclass.SelectedValue Is Nothing OrElse TypeOf cbclass.SelectedValue Is DataRowView Then Exit Sub
+        tksinhvien(cbclass.SelectedValue.ToString(), txttk.Text)
+    End Sub
+
+    '=== Khi gõ trong ô tìm kiếm ===
+    Private Sub txttk_TextChanged(sender As Object, e As EventArgs) Handles txttk.TextChanged
+        If cbclass.SelectedValue Is Nothing OrElse TypeOf cbclass.SelectedValue Is DataRowView Then Exit Sub
+        tksinhvien(cbclass.SelectedValue.ToString(), txttk.Text)
+    End Sub
+
+    '=== Thêm sinh viên ===
+    Private Sub btthem_Click(sender As Object, e As EventArgs) Handles btthem.Click
+        Dim frm As New frmsinhvien
+        frm.txtidlop.Text = Me.cbclass.SelectedValue.ToString()
+        frm.Text = "Thêm sinh viên"
+        frm.ShowDialog()
+        If frm.DialogResult = DialogResult.OK Then
+            LoadDataGr(Me.cbclass.SelectedValue)
+        End If
+    End Sub
+
+    '=== Sửa sinh viên ===
+    Private Sub btsua_Click(sender As Object, e As EventArgs) Handles btsua.Click
+        If dgvsinhvien.CurrentRow Is Nothing Then
+            MessageBox.Show("Vui lòng chọn sinh viên để sửa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim frm As New frmsinhvien
+        frm.txtmasv.Text = dgvsinhvien.CurrentRow.Cells(0).Value.ToString()
+        frm.txtten.Text = dgvsinhvien.CurrentRow.Cells(1).Value.ToString()
+        frm.txtdiachi.Text = dgvsinhvien.CurrentRow.Cells(2).Value.ToString()
+        frm.txtidlop.Text = dgvsinhvien.CurrentRow.Cells(3).Value.ToString()
+        frm.Text = "Sửa sinh viên"
+        frm.isEdit = True
+        frm.ShowDialog()
+
+        If frm.DialogResult = DialogResult.OK Then
+            LoadDataGr(Me.cbclass.SelectedValue)
+        End If
+    End Sub
+
+    '=== Xóa sinh viên ===
+    Private Sub btxoa_Click(sender As Object, e As EventArgs) Handles btxoa.Click
+        If dgvsinhvien.CurrentRow Is Nothing Then
+            MessageBox.Show("Vui lòng chọn sinh viên để xóa!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning)
+            Exit Sub
+        End If
+
+        Dim masv As String = dgvsinhvien.CurrentRow.Cells(0).Value.ToString()
+        If MessageBox.Show("Bạn có chắc muốn xóa sinh viên có mã: " & masv & " ?", "Xác nhận", MessageBoxButtons.YesNo, MessageBoxIcon.Question) = DialogResult.Yes Then
+            Dim sql As String = $"DELETE FROM [dbo].[sinhvien] WHERE MaSV = '{masv}'"
+            If DBA.ExecuteNonQuery(sql) Then
+                MessageBox.Show("Xóa sinh viên thành công!", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information)
+                LoadDataGr(Me.cbclass.SelectedValue)
+            End If
+        End If
+    End Sub
+End Class
+
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <StartupObject>Quanlisinhvien.My.MyApplication</StartupObject>
+    <UseWindowsForms>true</UseWindowsForms>
+    <MyType>WindowsForms</MyType>
+    <ImportedNamespaces>System.Data=False,System.Data.Common=False,System.Data.OracleClient=False,System.Data.SqlClient=False,System.Drawing=False,System.Windows.Forms=False,System.Windows.Forms.Automation=False,System.Windows.Forms.Design=False,Microsoft.VisualBasic=True,System=True,System.Collections=True,System.Collections.Generic=True,System.Diagnostics=True,System.Linq=True,System.Xml.Linq=True,System.Threading.Tasks=True,Quanlisinhvien=True</ImportedNamespaces>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Import Include="System.Data" />
+    <Import Include="System.Data.Common" />
+    <Import Include="System.Data.OracleClient" />
+    <Import Include="System.Data.SqlClient" />
+    <Import Include="System.Drawing" />
+    <Import Include="System.Windows.Forms" />
+    <Import Include="System.Windows.Forms.Automation" />
+    <Import Include="System.Windows.Forms.Design" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Data.SqlClient" Version="5.2.0" />
+    <PackageReference Include="System.Data.SqlClient" Version="4.9.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="My Project\Application.Designer.vb">
+      <DesignTime>True</DesignTime>
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Application.myapp</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="My Project\Application.myapp">
+      <Generator>MyApplicationCodeGenerator</Generator>
+      <LastGenOutput>Application.Designer.vb</LastGenOutput>
+    </None>
+  </ItemGroup>
+
+</Project>
